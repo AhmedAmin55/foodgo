@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 
 class AppTexts {
   static const String foodgo = "Foodgo";
+  static const String search = "Search";
+  static const String all = "All";
+  static const String combos = "Combos";
+  static const String sliders = "Sliders";
+  static const String classic = "Classic";
+  static const String orderYourFavouriteFood = "Order your favourite food!";
 }
 
 class AppTextsStyle {
@@ -11,6 +17,39 @@ class AppTextsStyle {
       fontSize: getResponsiveTextsize(context, baseFontsize: 80),
       fontFamily: "Lobster",
       color: AppColors.white,
+    );
+  }
+
+  static TextStyle lobsterRegular40(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 40),
+      fontFamily: "Lobster",
+      color: AppColors.brown,
+    );
+  }
+
+  static TextStyle poppinsMedium18(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 18),
+      fontFamily: "Poppins",
+      color: Color(0xff6A6A6A),
+    );
+  }
+
+  static TextStyle robotoMedium22(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 22),
+      fontFamily: "Roboto",
+      color: Color(0xff3C2F2F),
+    );
+  }
+
+  static TextStyle interMedium20(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 20),
+      fontWeight: FontWeight.bold,
+      fontFamily: "Inter",
+      color: AppColors.brown,
     );
   }
 }

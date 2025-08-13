@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 1), () {
+    Future.delayed(Duration(milliseconds: 1500), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -56,7 +56,12 @@ class _SplashScreenState extends State<SplashScreen> {
               style: AppTextsStyle.lobsterRegular60(context),
               child: AnimatedTextKit(
                 repeatForever: true,
-                animatedTexts: [TyperAnimatedText(AppTexts.foodgo)],
+                animatedTexts: [
+                  TyperAnimatedText(
+                    speed: Duration(milliseconds: 100),
+                    AppTexts.foodgo,
+                  ),
+                ],
               ),
             ),
           ),
