@@ -8,6 +8,13 @@ class AppTexts {
   static const String combos = "Combos";
   static const String sliders = "Sliders";
   static const String classic = "Classic";
+  static const String pizza = "Pizza";
+  static const String cheeseburger = "Cheeseburger";
+  static const String wendyBurger = "Wendy\'s Burger";
+  static const String hamburger = "Hamburger";
+  static const String veggieBurger = "Veggie Burger";
+  static const String chickenBurger = "Chicken Burger";
+  static const String friedChickenBurger = "Fried Chicken Burger";
   static const String orderYourFavouriteFood = "Order your favourite food!";
 }
 
@@ -44,12 +51,30 @@ class AppTextsStyle {
     );
   }
 
-  static TextStyle interMedium20(BuildContext context) {
+  static TextStyle robotoRegular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveTextsize(context, baseFontsize: 20),
+      fontFamily: "Roboto_Regular",
+      color: AppColors.brown,
+    );
+  }
+
+  static TextStyle roboto_Bold22(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 20),
+      fontFamily: "Roboto_Regular",
+      fontWeight: FontWeight.bold,
+
+      color: AppColors.brown,
+    );
+  }
+
+  static TextStyle interMedium20(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveTextsize(context, baseFontsize: 18),
       fontWeight: FontWeight.bold,
       fontFamily: "Inter",
-      color: AppColors.brown,
+      color: Color(0xff6A6A6A),
     );
   }
 }
